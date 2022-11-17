@@ -15,7 +15,7 @@ let showSlide = (slideNumber) => {
 };
 
 let showNextSlide = () => {
-    if(activeSlideNumber > 2){
+    if(activeSlideNumber > 5){
         activeSlideNumber = 1;
     }
     else {
@@ -27,7 +27,7 @@ let showNextSlide = () => {
 let showPreviousSlide = () => {
 
     if(activeSlideNumber < 2){
-        activeSlideNumber = 3;
+        activeSlideNumber = 6;
     }
     else {
         activeSlideNumber -= 1;
@@ -35,7 +35,7 @@ let showPreviousSlide = () => {
     showSlide(activeSlideNumber);
 };
 
-for( let i = 1; i <= 3; i++){
+for( let i = 1; i <= 6; i++){
     let showSlideI = () => {
         activeSlideNumber = i;
         showSlide(i);
